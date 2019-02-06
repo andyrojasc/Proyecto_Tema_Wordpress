@@ -1,0 +1,103 @@
+.text404 {
+    padding-top: 18vh;
+    text-shadow: 2px 2px 10px black;
+}
+
+.font404 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+.imgMotorcicle {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 105px;
+    height: 70px;
+    position: absolute;
+    margin-top: -68px;
+    left: 3%;
+}
+
+.imgObs {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 33px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+.bg_404 {
+    background: #6d5338;
+}
+
+.trash {
+    background: #413122;
+    width: 15px;
+    height: 2px;
+    position: absolute;
+}
+
+#trash1 {
+    margin-top: 20px;
+}
+
+#trash2 {
+    margin-top: 50px;
+    left: 16%;
+}
+
+#trash3 {
+    margin-top: 190px;
+    left: 19%;
+}
+
+#trash4 {
+    margin-top: 150px;
+    left: 35%;
+}
+
+#trash5 {
+    margin-top: 100px;
+    left: 5%;
+}
+
+#trash6 {
+    margin-top: 90px;
+    left: 50%;
+}
+
+#trash7 {
+    margin-top: 150px;
+    left: 75%;
+}
+
+#trash8 {
+    margin-top: 50px;
+    left: 90%;
+}
+
+#obs1 {
+    left: 90%;
+}
+
+#obs2 {
+    left: 190%;
+}
+
+#obs3 {
+    left: 230%;
+}
+
+@media (max-width: 500px) {
+    #obs1 {
+        left: 40%;
+    }
+    #obs2 {
+        left: 230%;
+    }
+    #obs3 {
+        left: 350%;
+    }
+}

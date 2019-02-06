@@ -1,0 +1,308 @@
+    /*!
+Theme Name: ExtremeSports
+Template Theme URI: http//www.srp.ucr.ac.cr/
+Author: Andy Rojas & Jeaustin Perez
+Author URI: http//www.srp.ucr.ac.cr/
+Description: Proyecto final del curso de Desarrollo Rapido
+Version: 2.0
+License: GNU General Public License v2 
+*/
+    
+    @import url('https://fonts.googleapis.com/css?family=Merriweather|Monoton|Old+Standard+TT');
+    @import url('https://fonts.googleapis.com/css?family=Staatliches');
+    $primary-color: #002748;
+    $secundary-color: #021f30;
+    $red-color: #dd0a3f;
+    @import 'contactos';
+    @import 'sliderSlick';
+    @import 'headerFooter';
+    @import '404';
+    @import 'atletas';
+    @import 'noticias';
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*index*/
+    
+    .raya {
+        border-top: 2px solid #4ab4ab;
+        width: 20%;
+        margin: auto;
+        padding-bottom: 1%;
+    }
+    
+    .v-header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    
+    .container {
+        max-width: 960px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .fullscreen-video-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .header-overlay {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        background: #000;
+        opacity: 0.5;
+    }
+    
+    .header-content {
+        z-index: 3;
+    }
+    
+    .btnSlid {
+        background: $red-color;
+        color: #fff;
+        font-size: 1.3rem;
+        padding: 0.6rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.6s;
+    }
+    
+    .btnSlid:hover {
+        background: #790724;
+        transition: 0.6s;
+    }
+    
+    @media(max-width:960px) {
+        .container {
+            padding-right: 3rem;
+            padding-left: 3rem;
+        }
+    }
+    
+    .bg {
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform .2s;
+    }
+    
+    .bg:hover {
+        transform: scale(1.05);
+        transition: 0.6s;
+    }
+    
+    .marginSlider {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .card-text {
+        font-size: 1.1rem!important;
+    }
+    
+    .bg-skate {
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 600px;
+        height: calc(100vh - 174px);
+    }
+    
+    .skate {
+        font-size: 4.3rem!important;
+    }
+    
+    .alignVertical {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .cajaForm {
+        box-shadow: 0px 25px 38px rgba(0, 0, 0, 0.2);
+    }
+    
+    //Categorias
+    .imgCategorias {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 350px;
+        height: calc(100vh - 577px);
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        background-color: (0, 0, 0, 0.8);
+    }
+    
+    //DetalleNoticia
+    .boxCategory {
+        padding: 4px 10px;
+        color: #ffffff;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        background: #22bab8;
+    }
+    
+    .noticeBoxTipo {
+        font-size: 18px;
+        line-height: 130%;
+        font-family: 'Roboto';
+        font-weight: 300;
+        color: #4b4b4b;
+    }
+    
+    //Letras
+    .h_fonts {
+        font-family: 'Staatliches'!important;
+    }
+    
+    .textShadow {
+        text-shadow: 1px 1px #000;
+    }
+    
+    h1 {
+        letter-spacing: 8px;
+        font-size: 6vw!important;
+        margin-left: 5px;
+    }
+    
+    h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: 3.5vw!important;
+        letter-spacing: 3px;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    //Responsive
+    @media (max-width: 1018px)and(min-width: 769px) {
+        .skate {
+            font-size: 4rem!important;
+        }
+        h1 {
+            //font-size: 4.5rem!important;
+            font-size: 10vw!important;
+        }
+        h2 {
+            font-size: 6.7vw!important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        nav {
+            a::after {
+                content: '';
+                display: none;
+            }
+        }
+        .bg-skate {
+            background-attachment: unset;
+        }
+        .navbar-brand {
+            padding-right: 50px;
+        }
+        .btn_seach {
+            position: absolute!important;
+            left: 80%;
+            top: 0%;
+            height: 55px;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        .bg_search {
+            margin-top: 55px;
+        }
+        h1 {
+            font-size: 15vw!important;
+        }
+        h2 {
+            font-size: 10vw!important;
+        }
+        .skate {
+            font-size: 3.5rem!important;
+        }
+        .marginSlider {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        .buttonResponsive {
+            display: block!important;
+        }
+        .img-fluid {
+            max-width: 70%!important;
+            transform: translate(20%, 2%);
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .alignVerticalContacts {
+            top: 35%;
+        }
+        h2 {
+            font-size: 12.5vw!important;
+        }
+        .btnForm {
+            width: 90%;
+        }
+    }
+    
+    @media (max-width: 338px) {
+        .contactsNumber {
+            width: 100%;
+        }
+        h2 {
+            font-size: 15vw!important;
+        }
+        .skate {
+            font-size: 3rem!important;
+        }
+        .red {
+            height: 84.6vh!important;
+        }
+        .blue {
+            height: 15vh!important;
+        }
+    }
+    
+    @media (max-height: 443px) {
+        .red {
+            height: 86.6vh!important;
+        }
+        .blue {
+            height: 13vh!important;
+        }
+    }
+    
+    .red {
+        height: 76.6vh;
+        background: #89baf7;
+    }
+    
+    .blue {
+        height: 23vh;
+        background: #6d5338;
+    }

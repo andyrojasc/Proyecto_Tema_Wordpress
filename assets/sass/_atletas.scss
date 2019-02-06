@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+$primary-color: #002748;
+$secundary-color: #021f30;
+$red-color: #dd0a3f;
+body {
+    background: #dfdddd;
+}
+
+.titulo1 {
+    font-size: 3rem!important;
+}
+
+
+/* slider   */
+
+.carousel {
+    display: flex!important;
+    align-items: center!important;
+    .carousel-indicators {
+        li {
+            width: 25%!important;
+        }
+    }
+}
+
+.titulo-slid {
+    font-size: 40px;
+}
+
+.text-slid {
+    font-size: 30px;
+}
+
+.enlace-perfil {
+    background: $red-color;
+    padding: 6px 40px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    &:hover {
+        color: #fff;
+        background: #9b072c;
+    }
+}
+
+.botonCard {
+    background: $red-color;
+    padding: 6px 40px;
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+    border-bottom: 1px solid transparent;
+    &:hover {
+        color: #fff;
+        background: #9b072c;
+    }
+}
+
+
+/*Definicion de caja de texto*/
+
+.cajaTexto {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.contenedor {
+    background: #dbd6d6;
+}
+
+.grupo-cartas {
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.imagenNacional {
+    float: left;
+}
+
+.nombreAtleta {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fcfcfc;
+    padding-right: 30px;
+}
+
+.bordeCarta {
+    border: 1px solid #fff!important;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .titulo-slid {
+        font-size: 20px;
+    }
+    .text-slid {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .botonCard {
+        margin: auto;
+    }
+    .nombreAtleta {
+        font-size: 18px;
+    }
+    .imagenNacional {
+        padding-left: 25px;
+    }
+    .titulo-slid {
+        font-size: 15px;
+    }
+    .text-slid {
+        font-size: 11px;
+    }
+}
