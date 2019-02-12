@@ -10,6 +10,7 @@ License: GNU General Public License v2
     
     @import url('https://fonts.googleapis.com/css?family=Merriweather|Monoton|Old+Standard+TT');
     @import url('https://fonts.googleapis.com/css?family=Staatliches');
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
     $primary-color: #002748;
     $secundary-color: #021f30;
     $red-color: #dd0a3f;
@@ -19,6 +20,7 @@ License: GNU General Public License v2
     @import '404';
     @import 'atletas';
     @import 'noticias';
+    @import 'detalleNoticia';
     * {
         margin: 0;
         padding: 0;
@@ -153,25 +155,6 @@ License: GNU General Public License v2
         background-color: (0, 0, 0, 0.8);
     }
     
-    //DetalleNoticia
-    .boxCategory {
-        padding: 4px 10px;
-        color: #ffffff;
-        display: inline-block;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 12px;
-        background: #22bab8;
-    }
-    
-    .noticeBoxTipo {
-        font-size: 18px;
-        line-height: 130%;
-        font-family: 'Roboto';
-        font-weight: 300;
-        color: #4b4b4b;
-    }
-    
     //Letras
     .h_fonts {
         font-family: 'Staatliches'!important;
@@ -252,6 +235,12 @@ License: GNU General Public License v2
         .buttonResponsive {
             display: block!important;
         }
+        .topMargin {
+            margin-top: 5.5%;
+        }
+        #imgPublicidad {
+            max-width: 50%!important;
+        }
     }
     
     @media (max-width: 500px) {
@@ -263,6 +252,12 @@ License: GNU General Public License v2
         }
         .btnForm {
             width: 90%;
+        }
+        .topMargin {
+            margin-top: 10%;
+        }
+        .tituloNoticia {
+            font-size: 40px!important;
         }
     }
     

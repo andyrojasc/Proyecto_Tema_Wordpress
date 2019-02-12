@@ -1,0 +1,78 @@
+    .topMargen {
+        margin-top: 7%;
+    }
+    
+    .cajaCategoria {
+        padding: 4px 10px;
+        color: #ffffff;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 17px;
+        background: $primary-color;
+        border-radius: 2px;
+        margin-bottom: 0;
+    }
+    
+    .tituloNoticia {
+        font-size: 52px!important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .tipoNoticiaLetra {
+        span {
+            font-weight: 951;
+            color: #333;
+        }
+        font-size: 18px;
+        line-height: 130%;
+        font-family: 'Roboto';
+        font-weight: 300;
+        color: #4b4b4b;
+    }
+    
+    .verMas {
+        h2 {
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 16px;
+            padding: 0;
+            letter-spacing: 0px;
+        }
+        span {
+            border-bottom: 1px solid #000;
+            bottom: -1px;
+            color: #000;
+            float: left;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            padding-bottom: 8px;
+            position: relative;
+        }
+    }
+    
+    #imgPublicidad {
+        max-width: 90%!important;
+    }
+    
+    #btnCardsNoticias {
+        color: #fff!important;
+        font-size: 1.1rem!important;
+        padding: 0.4rem 0.7rem;
+    }
+    
+    .card-img-top:hover {
+        cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
+        .topMargin {
+            margin-top: 5.5%;
+        }
+        #imgPublicidad {
+            max-width: 50%!important;
+        }
+    }
