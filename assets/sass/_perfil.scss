@@ -1,0 +1,41 @@
+$primary-color: #002748;
+body{
+    background: $primary-color!important;
+}
+.nombre-atleta{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.texto-citado{
+    color: #fff;
+    font-size: 20px;
+}
+.deporte{
+    color: #fff;
+}
+.borde{
+    
+    border-right: 1px solid #fff;
+}
+
+@media screen and (max-width: 1000px){
+    
+    .borde{
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid transparent;
+    } 
+}
+@media screen and (max-width: 450px){
+    .texto-foto{
+        margin-top: -150px!important;
+    }
+    .nombre-atleta{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 400px){
+    .texto-foto{
+        margin-top: -100px!important;
+    }
+}
