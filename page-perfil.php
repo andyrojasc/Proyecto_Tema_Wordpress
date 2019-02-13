@@ -32,7 +32,7 @@
     <div class="container mt-3 mb-3 ">
         <div class="row">
             <div class="col ">
-                <h4 class="text-center">Historia personal y carrera profesional</h4>
+                <h2 class="text-center h_fonts">Historia personal y carrera profesional</h2>
                 <p class="text-justify texto-descriptivo p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Voluptas magnam nisi placeat suscipit ad aliquid 
                     repellat quibusdam id consequatur illum adipisci 
