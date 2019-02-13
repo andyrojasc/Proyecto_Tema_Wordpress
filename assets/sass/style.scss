@@ -5,9 +5,9 @@ Author: Andy Rojas & Jeaustin Perez
 Author URI: http//www.srp.ucr.ac.cr/
 Description: Proyecto final del curso de Desarrollo Rapido
 Version: 2.0
-License: GNU General Public License v2 
+License: GNU General Public License v2
 */
-    
+
     @import url('https://fonts.googleapis.com/css?family=Merriweather|Monoton|Old+Standard+TT');
     @import url('https://fonts.googleapis.com/css?family=Staatliches');
     @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -26,21 +26,21 @@ License: GNU General Public License v2
         padding: 0;
     }
     /*index*/
-    
+
     .raya {
         border-top: 2px solid #4ab4ab;
         width: 20%;
         margin: auto;
         padding-bottom: 1%;
     }
-    
+
     .v-header {
         height: 100vh;
         display: flex;
         align-items: center;
         color: #fff;
     }
-    
+
     .container {
         max-width: 960px;
         padding-left: 1rem;
@@ -48,7 +48,7 @@ License: GNU General Public License v2
         margin: auto;
         text-align: center;
     }
-    
+
     .fullscreen-video-wrap {
         position: absolute;
         top: 0;
@@ -57,7 +57,7 @@ License: GNU General Public License v2
         height: 100vh;
         overflow: hidden;
     }
-    
+
     .header-overlay {
         height: 100vh;
         position: absolute;
@@ -68,11 +68,11 @@ License: GNU General Public License v2
         background: #000;
         opacity: 0.5;
     }
-    
+
     .header-content {
         z-index: 3;
     }
-    
+
     .btnSlid {
         background: $red-color;
         color: #fff;
@@ -84,19 +84,19 @@ License: GNU General Public License v2
         cursor: pointer;
         transition: transform 0.6s;
     }
-    
+
     .btnSlid:hover {
         background: #790724;
         transition: 0.6s;
     }
-    
+
     @media(max-width:960px) {
         .container {
             padding-right: 3rem;
             padding-left: 3rem;
         }
     }
-    
+
     .bg {
         height: 300px;
         background-position: center;
@@ -104,21 +104,21 @@ License: GNU General Public License v2
         background-size: cover;
         transition: transform .2s;
     }
-    
+
     .bg:hover {
         transform: scale(1.05);
         transition: 0.6s;
     }
-    
+
     .marginSlider {
         margin-left: 5%;
         margin-right: 5%;
     }
-    
+
     .card-text {
         font-size: 1.1rem!important;
     }
-    
+
     .bg-skate {
         background-attachment: fixed;
         background-size: cover;
@@ -127,22 +127,22 @@ License: GNU General Public License v2
         min-height: 600px;
         height: calc(100vh - 174px);
     }
-    
+
     .skate {
         font-size: 4.3rem!important;
     }
-    
+
     .alignVertical {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
     }
-    
+
     .cajaForm {
         box-shadow: 0px 25px 38px rgba(0, 0, 0, 0.2);
     }
-    
+
     //Categorias
     .imgCategorias {
         background-size: cover;
@@ -154,33 +154,33 @@ License: GNU General Public License v2
         transition: all .4s ease-in-out;
         background-color: (0, 0, 0, 0.8);
     }
-    
+
     //Letras
     .h_fonts {
         font-family: 'Staatliches'!important;
     }
-    
+
     .textShadow {
         text-shadow: 1px 1px #000;
     }
-    
+
     h1 {
         letter-spacing: 8px;
         font-size: 6vw!important;
         margin-left: 5px;
     }
-    
+
     h2 {
         text-align: center;
         padding: 20px;
         font-size: 3.5vw!important;
         letter-spacing: 3px;
     }
-    
+
     h3 {
         font-size: 2rem;
     }
-    
+
     //Responsive
     @media (max-width: 1018px)and(min-width: 769px) {
         .skate {
@@ -194,7 +194,7 @@ License: GNU General Public License v2
             font-size: 6.7vw!important;
         }
     }
-    
+
     @media (max-width: 768px) {
         nav {
             a::after {
@@ -242,7 +242,7 @@ License: GNU General Public License v2
             max-width: 50%!important;
         }
     }
-    
+
     @media (max-width: 500px) {
         .alignVerticalContacts {
             top: 35%;
@@ -260,7 +260,7 @@ License: GNU General Public License v2
             font-size: 40px!important;
         }
     }
-    
+
     @media (max-width: 338px) {
         .contactsNumber {
             width: 100%;
@@ -278,7 +278,7 @@ License: GNU General Public License v2
             height: 15vh!important;
         }
     }
-    
+
     @media (max-height: 443px) {
         .red {
             height: 86.6vh!important;
@@ -287,12 +287,12 @@ License: GNU General Public License v2
             height: 13vh!important;
         }
     }
-    
+
     .red {
         height: 76.6vh;
         background: #89baf7;
     }
-    
+
     .blue {
         height: 23vh;
         background: #6d5338;

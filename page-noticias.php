@@ -25,8 +25,8 @@
                     <div class="card text-white text-left rounded ">
                         <img src="<?php bloginfo('template_directory'); ?>/assets/img/noticias/video1.jpg" class="d-block w-100" alt="">
                         <div class="card-img-overlay texto-video">
-                                <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <h6 class="card-title text-center">Lorem, ipsum dolor.</h6>           
+                            <h6 class="card-title text-center">Lorem, ipsum dolor.</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>              
                         </div>
                     </div>
 
@@ -39,11 +39,11 @@
                         </div>
                     </div>
 
-                    <div class="card  text-white text-left rounded">
+                    <div class="card text-white text-left rounded ">
                         <img src="<?php bloginfo('template_directory'); ?>/assets/img/noticias/video1.jpg" class="d-block w-100" alt="">
                         <div class="card-img-overlay texto-video">
-                                <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <h6 class="card-title text-center">Lorem, ipsum dolor.</h6>           
+                            <h6 class="card-title text-center">Lorem, ipsum dolor.</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>              
                         </div>
                     </div>
 
@@ -56,11 +56,11 @@
                         </div>
                     </div>
 
-                    <div class="card  text-white text-left rounded">
+                    <div class="card text-white text-left rounded ">
                         <img src="<?php bloginfo('template_directory'); ?>/assets/img/noticias/video1.jpg" class="d-block w-100" alt="">
                         <div class="card-img-overlay texto-video">
-                                <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <h6 class="card-title text-center">Lorem, ipsum dolor.</h6>           
+                            <h6 class="card-title text-center">Lorem, ipsum dolor.</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>              
                         </div>
                     </div>
 
@@ -73,11 +73,11 @@
                         </div>
                     </div>
 
-                    <div class="card text-white text-left rounded">
+                    <div class="card text-white text-left rounded ">
                         <img src="<?php bloginfo('template_directory'); ?>/assets/img/noticias/video1.jpg" class="d-block w-100" alt="">
                         <div class="card-img-overlay texto-video">
-                                <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <h6 class="card-title text-center">Lorem, ipsum dolor.</h6>           
+                            <h6 class="card-title text-center">Lorem, ipsum dolor.</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>              
                         </div>
                     </div>
 
