@@ -3,7 +3,7 @@
 		<div class="row mt-3">
 			<div class="col-12 p-0 mb-0">
 				<div class="carousel slide carousel-fade" id="secondary-carousel" data-ride="carousel">
-					<ol class="carousel-indicators ">
+					<ol class="carousel-indicators">
 						<li data-target="#secondary-carousel" data-slid-to="0" class="active"></li>
 						
 						<li data-target="#secondary-carousel" data-slid-to="1"></li>
