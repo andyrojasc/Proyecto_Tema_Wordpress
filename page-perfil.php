@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="body-perfil">
     <div class="container-fluid">
         <div class="row alignVertical">
             <div class="col-12 bannerContactenos text-center" class="d-block w-100" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/perfil/tencio.png);">
@@ -11,7 +12,7 @@
             </div>
         </div>
     </div>
-    <div class="container datos">
+    <div class="container">
         <div class="row mt-4 pt-4">
             <div class="col-12 col-lg-4 text-white borde pt-2">
                 <h4>Nacimiento</h4>
@@ -27,4 +28,5 @@
             </div>
         </div>
     </div>
+</div>
 <?php get_footer(); ?>
