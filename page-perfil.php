@@ -2,7 +2,7 @@
 <div class="body-perfil">
     <div class="container-fluid">
         <div class="row alignVertical">
-            <div class="col-12 bannerContactenos text-center" class="d-block w-100" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/perfil/tencio.png);">
+            <div class="col-12 bannerContactenos text-center" class="d-block w-100" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/perfil/slid.png);">
                 <div class="alignVerticalContacts texto-foto">
                     <h1 class="h_fonts text-center textShadow text-white">Kenneth Tencio Pollis</h1>
                     <h4 class="h_fonts nombre-atleta">Costa Rica</h4>
