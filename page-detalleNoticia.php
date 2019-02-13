@@ -19,7 +19,7 @@
         <section class="row justify-content-md-center px-lg-4 mt-3">
             <div class="col-lg-9 col-md-12 col-sm-12 text-justify">
                 <p class="tipoNoticiaLetra"><i class="far fa-calendar-alt fa-2x mr-2"></i> <span>20 de marzo del 2019</span></p>
-                <p class="tipoNoticiaLetra mt-4">
+                <p class="tipoNoticiaLetra mt-4"> 
 
 El centrocampista del Real Madrid Isco, ausente el sábado en el partido contra el Atlético de Madrid (3-1), sufre dolores dorsales y cervicales, confirmó este domingo el club merengue, que podría verse privado del talentoso internacional español en el duelo de ida octavos de 'Champions' contra el Ajax de Ámsterdam.<br><br>
 
