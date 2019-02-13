@@ -19,7 +19,7 @@
 	<button class="navbar-toggler" id="collapsibleButton" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
     <span class="open"><i class="fas fa-bars"></i></span>
 	</button>
-	<a class="navbar-brand mx-auto" href="<?php bloginfo('url'); ?>">extreme</a>
+	<a class="navbar-brand mx-auto" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/img/logo.svg" alt=""></a>
 		<?php
 		wp_nav_menu( array(
 			'theme_location'    => 'primary',
