@@ -289,6 +289,18 @@ License: GNU General Public License v2
         }
     }
     
+    @media screen and (max-height: 420px) {
+        .alignVerticalContacts {
+            top: 8%;
+        }
+    }
+    
+    @media screen and (max-height: 330px) {
+        .alignVerticalContacts {
+            top: 14%;
+        }
+    }
+    
     .red {
         height: 76.6vh;
         background: #89baf7;
