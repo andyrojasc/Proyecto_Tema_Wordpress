@@ -1,5 +1,5 @@
     .topMargen {
-        margin-top: 7%;
+        margin-top: 10%;
     }
     
     .cajaCategoria {
@@ -69,10 +69,16 @@
     }
     
     @media (max-width: 768px) {
-        .topMargin {
-            margin-top: 5.5%;
+        .topMargen {
+            margin-top: 13%;
         }
         #imgPublicidad {
             max-width: 50%!important;
+        }
+    }
+    
+    @media (max-width: 550px) {
+        .topMargen {
+            margin-top: 23%;
         }
     }
