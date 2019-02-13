@@ -190,7 +190,7 @@
 	</div>
 	<div class="row m-5">
 		<div class="col">
-			<a href="#" class="btn btn-success col-12 col-xl-5">Ver mas</a>
+			<a href="#" class="btn btn-danger col-12 col-lg-6 col-xl-8">Ver mas</a>
 		</div>				
 	</div>
 </div>

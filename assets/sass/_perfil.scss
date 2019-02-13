@@ -1,5 +1,5 @@
 $primary-color: #002748;
-body{
+.body-perfil{
     background: $primary-color!important;
 }
 .nombre-atleta{
@@ -17,6 +17,13 @@ body{
 .borde{
     
     border-right: 1px solid #fff;
+}
+.texto-descriptivo{
+    font-size: 18px;
+    line-height: 130%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #4b4b4b;
 }
 
 @media screen and (max-width: 1000px){
