@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <div class="container-fluid">
         <div class="row alignVertical">
-            <div class="col-12 bannerContactenos text-center" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/contactos/bannerPrincipal.png);">
+            <div class="col-12 bannerContactenos text-center" style="<?php if ( get_field( 'imagenprincipalcontactos') ) { ?>  background-image: url(<?php the_field( 'imagenprincipalcontactos' ); ?>);  <?php } ?>">
                 <div class="alignVerticalContacts">
                     <h1 class="h_fonts text-center textShadow text-white"><?php the_field( 'textobanner' ); ?></h1>
                     <br>
