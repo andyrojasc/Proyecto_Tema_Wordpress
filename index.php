@@ -9,19 +9,10 @@
           </div>
           <div class="header-overlay"></div>
               <div class="container-fluid header-content">
-              <div class="row text-md-center">
+              <div class="row text-md-center"> 
                   <div class="col-12">
-                  	<?php
-                  		if(have_posts()) :
-                  			while(have_posts()) : the_post();?>
-                      			<h1 class="h_fonts textShadow"><?php the_content(); ?></h1><br>
-                      		<?php endwhile;
-                      	else :
-                      		echo "<p>No hay contenido.</p>";
-                      	endif;
-                      ?>
-
-                      <button type="button" class="btnSlid my-3">Ver el video</button>
+                    <h1 class="h_fonts textShadow"> <?php the_field( 'tituloheader' ); ?> </h1><br>
+                    <button type="button" class="btnSlid my-3"><?php the_field( 'btnvideo' ); ?></button>
                   </div>
               </div>
           </div>
@@ -46,53 +37,37 @@
       </div>-->
 <div class="container-fluid cardsSlider py-5 my-2">
     <h6 class="raya mb-3"></h6>
-    <h2 class="h_fonts">DESCUBRE MÁS SOBRE EXTREMOS</h2>
+    <h2 class="h_fonts"><?php the_field( 'subtitulocards' ); ?></h2>
     <section class="customer-logos slider my-4">
         <div class="col-lg-3 col-md-5 my-4 slide">
             <div class="card bg-dark text-white bg" style="background-image: url(<?php bloginfo('template_directory'); ?>/assets/img/tencio.png);">
                 <div class="card-img-overlay">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title"><?php the_field( 'titulocard1' ); ?></h3>
+                    <p class="card-text"><?php the_field( 'subtitulocard1' ); ?></p>
                </div>
             </div>
         </div>
       <div class="col-lg-3 col-md-5 my-4 slide">
             <div class="card bg-dark text-white bg" style="background-image: url(<?php bloginfo('template_directory'); ?>/assets/img/tencio.png);">
                 <div class="card-img-overlay">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title"><?php the_field( 'titulocard2' ); ?></h3>
+                    <p class="card-text"><?php the_field( 'subtitulocard2' ); ?></p>
                </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-5 my-4 slide">
             <div class="card bg-dark text-white bg" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/cali.png);">
                 <div class="card-img-overlay">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title"><?php the_field( 'titulocard3' ); ?></h3>
+                    <p class="card-text"><?php the_field( 'subtitulocard3' ); ?></p>
                </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-5 my-4 slide">
             <div class="card bg-dark text-white bg" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/cali.png);">
                 <div class="card-img-overlay">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-               </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-5 my-4 slide">
-            <div class="card bg-dark text-white bg" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/gabriel.png);">
-                <div class="card-img-overlay">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-               </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 my-4 slide">
-            <div class="card bg-dark text-white bg" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/gabriel.png);">
-                <div class="card-img-overlay">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title"><?php the_field( 'titulocard4' ); ?></h3>
+                    <p class="card-text"><?php the_field( 'subtitulocard4' ); ?></p>
                </div>
             </div>
         </div>
@@ -108,7 +83,7 @@
     <div class="container-fluid bg-skate alignVertical" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/skaters.png);">
         <div class="row my-auto">
             <div class="col-lg-12 col-md-10 col-sm-12 text-center text-white mx-auto px-0">
-                <h2 class="h_fonts skate textShadow">Las mejores noticias <br> sobre el mundo <br> del skateboard <br> <button type="button" style="font-family:sans-serif;" class="btnSlid mt-4">Ver mas</button> </h2>
+                <h2 class="h_fonts skate textShadow"><?php the_field( 'textoskate' ); ?> <button type="button" style="font-family:sans-serif;" class="btnSlid mt-4"><?php the_field( 'botonskate' ); ?></button> </h2>
             </div>
         </div>
     </div>
@@ -117,27 +92,27 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center py-4 mt-5">
                 <h6 class="raya"></h6>
-                <h2 class="h_fonts">NO TE PIERDAS NUESTRAS NOTICIAS</h2>
+                <h2 class="h_fonts"><?php the_field( 'notificacionesnoticias' ); ?></h2>
             </div>
 
             <div class="col-lg-8 col-md-12 col-sm-12 cajaForm py-5 text-left">
                 <form>
                   <div class="form-group">
-                    <label runat="server">Correo Electronico:</label>
-                    <input ID="txtEmail" runat="server" class="form-control mt-2" placeholder="nombre@ejemplo.com">
+                    <label runat="server"><?php the_field( 'campo1notificaciones' ); ?></label>
+                    <input ID="txtEmail" runat="server" class="form-control mt-2" placeholder="<?php the_field( 'placeholdernotificaciones1' ); ?>">
                   </div>
 
                   <div class="form-group">
-                    <label runat="server">Nombre Completo</label>
-                    <input ID="TextBox1" runat="server" class="form-control mt-2" placeholder="Juan Ramirez">
+                    <label runat="server"><?php the_field( 'campo2notificaciones' ); ?></label>
+                    <input ID="TextBox1" runat="server" class="form-control mt-2" placeholder="<?php the_field( 'placeholdernotificaciones2' ); ?>">
                   </div>
 
                   <div class="form-group">
-                     <label for="exampleFormControlTextarea1">Cuentanos ¿Cuál es tu motivo para seguirnos?</label>
+                     <label for="exampleFormControlTextarea1"><?php the_field( 'campo3notificaciones' ); ?></label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                   <div class="form-group pt-2 text-center">
-                    <button type="button" class="btnSlid btnForm mt-4">Enviar</button>
+                    <button type="button" class="btnSlid btnForm mt-4"><?php the_field( 'btnnotificaciones' ); ?></button>
                   </div>
 
                 </form>
