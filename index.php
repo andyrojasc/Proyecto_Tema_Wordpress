@@ -40,7 +40,7 @@
     <h2 class="h_fonts"><?php the_field( 'subtitulocards' ); ?></h2>
     <section class="customer-logos slider my-4">
         <div class="col-lg-3 col-md-5 my-4 slide">
-            <div class="card bg-dark text-white bg" style="background-image: url(<?php bloginfo('template_directory'); ?>/assets/img/tencio.png);">
+            <div class="card bg-dark text-white bg" style="<?php if ( get_field( 'imagencard1') ) { ?>  background-image: url(<?php the_field( 'imagencard1' ); ?>);  <?php } ?>">
                 <div class="card-img-overlay">
                     <h3 class="card-title"><?php the_field( 'titulocard1' ); ?></h3>
                     <p class="card-text"><?php the_field( 'subtitulocard1' ); ?></p>
@@ -48,7 +48,7 @@
             </div>
         </div>
       <div class="col-lg-3 col-md-5 my-4 slide">
-            <div class="card bg-dark text-white bg" style="background-image: url(<?php bloginfo('template_directory'); ?>/assets/img/tencio.png);">
+            <div class="card bg-dark text-white bg" style="<?php if ( get_field( 'imagencard2') ) { ?>  background-image: url(<?php the_field( 'imagencard2' ); ?>);  <?php } ?>">
                 <div class="card-img-overlay">
                     <h3 class="card-title"><?php the_field( 'titulocard2' ); ?></h3>
                     <p class="card-text"><?php the_field( 'subtitulocard2' ); ?></p>
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-5 my-4 slide">
-            <div class="card bg-dark text-white bg" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/cali.png);">
+            <div class="card bg-dark text-white bg" style="<?php if ( get_field( 'imagencard3') ) { ?>  background-image: url(<?php the_field( 'imagencard3' ); ?>);  <?php } ?>">
                 <div class="card-img-overlay">
                     <h3 class="card-title"><?php the_field( 'titulocard3' ); ?></h3>
                     <p class="card-text"><?php the_field( 'subtitulocard3' ); ?></p>
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-5 my-4 slide">
-            <div class="card bg-dark text-white bg" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/cali.png);">
+            <div class="card bg-dark text-white bg" style="<?php if ( get_field( 'imagencard4') ) { ?>  background-image: url(<?php the_field( 'imagencard4' ); ?>);  <?php } ?>">
                 <div class="card-img-overlay">
                     <h3 class="card-title"><?php the_field( 'titulocard4' ); ?></h3>
                     <p class="card-text"><?php the_field( 'subtitulocard4' ); ?></p>
