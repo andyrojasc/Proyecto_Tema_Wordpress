@@ -2,8 +2,8 @@
 <div class="body-perfil">
     <div class="container-fluid">
         <div class="row alignVertical">
-            <div class="col-12 bannerContactenos text-center" class="d-block w-100" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/perfil/slid.png);">
-                <div class="alignVerticalContacts fixProfile texto-foto">
+            <div class="col-12 bannerContactenos text-center" class="d-block w-100" style="background-image: url(<?php echo bloginfo('template_directory'); ?>/assets/img/perfil/tencio.png);">
+                <div class="alignVerticalContacts texto-foto">
                     <h1 class="h_fonts text-center textShadow text-white">Kenneth Tencio Pollis</h1>
                     <h4 class="h_fonts nombre-atleta">Costa Rica</h4>
                     <p class="texto-citado h_fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi dolor aperiam harum ea voluptatum enim.</p>
@@ -31,8 +31,8 @@
 </div>
     <div class="container mt-3 mb-3 ">
         <div class="row">
-            <div class="col">
-                <h2 class="text-center h_fonts">Historia personal y carrera profesional</h2>
+            <div class="col ">
+                <h4 class="text-center">Historia personal y carrera profesional</h4>
                 <p class="text-justify texto-descriptivo p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Voluptas magnam nisi placeat suscipit ad aliquid 
                     repellat quibusdam id consequatur illum adipisci 
