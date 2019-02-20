@@ -1,28 +1,24 @@
 $primary-color: #002748;
-.body-perfil {
+.body-perfil{
     background: $primary-color!important;
 }
-
-.nombre-atleta {
+.nombre-atleta{
     color: #fff;
     margin-bottom: 50px;
     font-size: 40px;
 }
-
-.texto-citado {
+.texto-citado{
     color: #fff;
     font-size: 20px;
 }
-
-.deporte {
+.deporte{
     color: #fff;
 }
-
-.borde {
+.borde{
+    
     border-right: 1px solid #fff;
 }
-
-.texto-descriptivo {
+.texto-descriptivo{
     font-size: 18px;
     line-height: 130%;
     font-family: 'Roboto';
@@ -30,24 +26,23 @@ $primary-color: #002748;
     color: #4b4b4b;
 }
 
-@media screen and (max-width: 1000px) {
-    .borde {
+@media screen and (max-width: 1000px){
+    
+    .borde{
         border-bottom: 1px solid #fff;
         border-right: 1px solid transparent;
-    }
+    } 
 }
-
-@media screen and (max-width: 450px) {
-    .texto-foto {
+@media screen and (max-width: 450px){
+    .texto-foto{
         margin-top: -150px!important;
     }
-    .nombre-atleta {
+    .nombre-atleta{
         font-size: 25px;
     }
 }
-
-@media screen and (max-width: 400px) {
-    .texto-foto {
+@media screen and (max-width: 400px){
+    .texto-foto{
         margin-top: -100px!important;
     }
 }
