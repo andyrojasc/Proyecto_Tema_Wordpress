@@ -26,6 +26,13 @@ $primary-color: #002748;
     color: #4b4b4b;
 }
 
+@media screen and (max-height: 450px) and (max-width: 768px){
+     .alignVerticalContacts {
+        top: 5%;
+    }
+
+}
+
 @media screen and (max-width: 1000px){
     
     .borde{
