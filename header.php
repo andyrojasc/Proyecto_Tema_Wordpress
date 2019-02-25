@@ -53,7 +53,13 @@
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="input-group py-2 mt-4">
-                            <input type="text" class="form-control" placeholder="Search">
+                            <input type="text" class="form-control" placeholder="<?php 
+                        $currLang = get_bloginfo('language');
+                        if($currLang == 'es-CR'){ // Replace condition with your language code.
+                            echo 'Buscar Noticia';
+                        } else {
+                            echo 'Search New';
+                        }?>"> 
                             <div class="input-group-append">
                                 <button class="btn btn-secondary" type="button">
                                 <i class="fa fa-search" id="fa-search"></i>
@@ -65,7 +71,14 @@
 
                 <div class="row py-4">
                     <div class="col-12 text-white">
-                        <h3 class="searchCollapse">Busquedas frecuentes</h3>
+                        <h3 class="searchCollapse" id="Busquedas"><?php 
+                        $currLang = get_bloginfo('language');
+                        if($currLang == "es-CR"){ // Replace condition with your language code.
+                            echo 'Busquedas Recientes';
+                        } else {
+                            echo 'Recent Searches';
+                        }
+                        ?></h3>
                     </div>
                 </div>
 
@@ -93,7 +106,9 @@
 
         <script type="text/javascript">
             var i = 0;
+           // var lenguaje=window.language;
             $(document).ready(function(){
+              //  console.log(lenguaje);
                 $("#searchButton").click(function(){
                     i++;
 
