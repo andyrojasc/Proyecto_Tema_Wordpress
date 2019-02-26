@@ -12,7 +12,7 @@
               <div class="row text-md-center"> 
                   <div class="col-12">
                     <h1 class="h_fonts textShadow"> <?php the_field( 'tituloheader' ); ?> </h1><br>
-                    <button type="button" class="btnSlid my-3"><?php the_field( 'btnvideo' ); ?></button>
+                    <a href="<?php the_field( 'vervideo' ); ?>"><button type="button" class="btnSlid my-3"><?php the_field( 'btnvideo' ); ?></button></a>
                   </div>
               </div>
           </div>

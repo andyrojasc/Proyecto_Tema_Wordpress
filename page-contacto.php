@@ -5,7 +5,7 @@
                 <div class="alignVerticalContacts">
                     <h1 class="h_fonts text-center textShadow text-white"><?php the_field( 'textobanner' ); ?></h1>
                     <br>
-                    <button type="button" class="btnSlid my-3 "><?php the_field( 'btnbanner' ); ?></button>
+                    <a href="<?php the_field( 'volverinicio' ); ?>"><button type="button" class="btnSlid my-3 "><?php the_field( 'btnbanner' ); ?></button></a>
                 </div>
             </div>
         </div>
