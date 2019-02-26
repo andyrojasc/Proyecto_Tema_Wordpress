@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    
+
     <div class="container-fluid">
         <div class="row alignVertical">
             <div class="col-12 bannerContactenos text-center" style="<?php if ( get_field( 'img-inicio') ) { ?>  background-image: url(<?php the_field( 'img-inicio' ); ?>);  <?php } ?>">
@@ -19,90 +19,38 @@
             </div>
         </div>
 
-        <div class="row my-3">
-            <div class="col">
-                <div class="card-columns">
-                    <div class="card text-white text-left rounded ">
-                        <?php if ( get_field( 'img-card-1') ) { ?>
-                            <img class="d-block w-100" src="<?php the_field( 'img-card-1' ); ?>" />
-                        <?php } ?>
-                        <div class="card-img-overlay texto-video">
-                            <h6 class="card-title text-center"><?php the_field( 'titulo-noticia-1' ); ?></h6>
-                            <p class="card-text text-center"><?php the_field( 'subtitulo-noticia-1' ); ?></p>              
-                        </div>
-                    </div>
+        <div class="row ">
 
-                    <div class="card ">
-                        <?php if ( get_field( 'img-card-2') ) { ?>
-                            <img class="card-img-top img-fluid" src="<?php the_field( 'img-card-2' ); ?>" />
-                        <?php } ?>
-                        <div class="card-body">
-                            <h3 class="card-title"><?php the_field( 'titulo-noticia-2' ); ?></h3>
-                            <p class="card-text"><?php the_field( 'subtitulo-noticia-2' ); ?></p>
-                        </div>
-                    </div>
+                <?php
+                    $lastposts = get_posts( array(
+                        'posts_per_page' => 100
+                    ) );
 
-                    <div class="card text-white text-left rounded ">
-                        <?php if ( get_field( 'img-card-3') ) { ?>
-                            <img class="d-block w-100" src="<?php the_field( 'img-card-3' ); ?>" />
-                        <?php } ?>
-                        <div class="card-img-overlay texto-video">
-                            <h6 class="card-title text-center"><?php the_field( 'titulo-noticia-3' ); ?></h6>
-                            <p class="card-text text-center"><?php the_field( 'subtitulo-noticia-3' ); ?></p>              
-                        </div>
-                    </div>
+                    if ( $lastposts ) {
+                        foreach ( $lastposts as $post ) :
+                            setup_postdata( $post );
+                            if(get_field( 'categoriapagina' ) == 'Noticia' )
+                            {?>
+                              <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                              <a href="<?php the_permalink(); ?>">
+                              <div class="card text-white text-left rounded ">
+                                  <?php if ( get_field( 'imgcartanoticia') ) { ?>
+                                      <img class="d-block w-100" src="<?php the_field( 'imgcartanoticia' ); ?>" />
+                                  <?php } ?>
+                                  <div class="card-img-overlay texto-video">
+                                      <h6 class="card-title text-center"><?php the_title(); ?></h6>
+                                      <p class="card-text text-center"><?php the_field( 'subtitulocartapaginanoticia' ); ?></p>
+                                  </div>
+                              </div>
+                              </a>
+                              </div>
+                        <?php
+                      }
+                        endforeach;
+                        wp_reset_postdata();
+                    }
+                ?>
 
-                    <div class="card ">
-                        <?php if ( get_field( 'img-card-4') ) { ?>
-                            <img class="card-img-top img-fluid" src="<?php the_field( 'img-card-4' ); ?>" />
-                        <?php } ?>
-                        <div class="card-body">
-                            <h3 class="card-title"><?php the_field( 'titulo-noticia-4' ); ?></h3>
-                            <p class="card-text"><?php the_field( 'subtitulo-noticia-4' ); ?></p>
-                        </div>
-                    </div>
-
-                    <div class="card text-white text-left rounded ">
-                        <?php if ( get_field( 'img-card-5') ) { ?>
-                            <img class="d-block w-100" src="<?php the_field( 'img-card-5' ); ?>" />
-                        <?php } ?>
-                        <div class="card-img-overlay texto-video">
-                            <h6 class="card-title text-center"><?php the_field( 'titulo-noticia-5' ); ?></h6>
-                            <p class="card-text text-center"><?php the_field( 'subtitulo-noticia-5' ); ?></p>              
-                        </div>
-                    </div>
-
-                    <div class="card ">
-                        <?php if ( get_field( 'img-card-6') ) { ?>
-                            <img class="card-img-top img-fluid" src="<?php the_field( 'img-card-6' ); ?>" />
-                        <?php } ?>
-                        <div class="card-body">
-                            <h3 class="card-title"><?php the_field( 'titulo-noticia-6' ); ?></h3>
-                            <p class="card-text"><?php the_field( 'subtitulo-noticia-6' ); ?></p>
-                        </div>
-                    </div>
-
-                    <div class="card text-white text-left rounded ">
-                        <?php if ( get_field( 'img-card-7') ) { ?>
-                            <img class="d-block w-100" src="<?php the_field( 'img-card-7' ); ?>" />
-                        <?php } ?>
-                        <div class="card-img-overlay texto-video">
-                            <h6 class="card-title text-center"><?php the_field( 'titulo-noticia-7' ); ?></h6>
-                            <p class="card-text text-center"><?php the_field( 'subtitulo-noticia-7' ); ?></p>              
-                        </div>
-                    </div>
-
-                    <div class="card ">
-                        <?php if ( get_field( 'img-card-8') ) { ?>
-                            <img class="card-img-top img-fluid" src="<?php the_field( 'img-card-8' ); ?>" />
-                        <?php } ?>
-                        <div class="card-body">
-                            <h3 class="card-title"><?php the_field( 'titulo-noticia-8' ); ?></h3>
-                            <p class="card-text"><?php the_field( 'subtitulo-noticia-8' ); ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 <?php get_footer(); ?>
