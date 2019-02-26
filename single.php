@@ -36,47 +36,47 @@
             <div class="col-12">
                 <div class="verMas">
                     <h2>
-                        <span>También puedes ver</span>
+                        <span><?php the_field( 'titulocardsnoticiasrelacionadas' ); ?></span>
                     </h2>
                 </div>
             </div>
             <!-- Cards de otras noticias -->
             <div class="col-lg-4 col-md-6 col-sm-12 my-3">
                 <div class="card">
-                <a href="">
+                <a href="<?php the_field( 'href1noticia' ); ?>">
                     <?php if ( get_field( 'imagencard1') ) { ?>
                         <img class="card-img-top" src="<?php the_field( 'imagencard1' ); ?>" />
                     <?php } ?>
                 </a>
                     <div class="card-body">
                         <p class="card-text"><?php the_field( 'titulocard1' ); ?></p>
-                        <a class="btnSlid my-3" id="btnCardsNoticias"><?php the_field( 'botoncard1' ); ?></a>
+                        <a href="<?php the_field( 'href1noticia' ); ?>" class="btnSlid my-3" id="btnCardsNoticias"><?php the_field( 'botoncard1' ); ?></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 my-3">
                 <div class="card">
-                <a href="">
+                <a href="<?php the_field( 'href2noticia' ); ?>">
                     <?php if ( get_field( 'imagencard2') ) { ?>
                         <img class="card-img-top" src="<?php the_field( 'imagencard2' ); ?>" />
                     <?php } ?>
                 </a>
                     <div class="card-body">
                         <p class="card-text"><?php the_field( 'titulocard2' ); ?></p>
-                        <a class="btnSlid my-3" id="btnCardsNoticias"><?php the_field( 'botoncard2' ); ?></a>
+                        <a href="<?php the_field( 'href2noticia' ); ?>" class="btnSlid my-3" id="btnCardsNoticias"><?php the_field( 'botoncard2' ); ?></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 my-3">
                 <div class="card">
-                    <a href="">
+                    <a href="<?php the_field( 'href3noticia' ); ?>">
                         <?php if ( get_field( 'imagencard3') ) { ?>
                             <img class="card-img-top" src="<?php the_field( 'imagencard3' ); ?>" />
                         <?php } ?>
                     </a>
                     <div class="card-body">
                         <p class="card-text"><?php the_field( 'titulocard3' ); ?></p>
-                        <a class="btnSlid my-3" id="btnCardsNoticias"><?php the_field( 'botoncard3' ); ?></a>
+                        <a href="<?php the_field( 'href3noticia' ); ?>" class="btnSlid my-3" id="btnCardsNoticias"><?php the_field( 'botoncard3' ); ?></a>
                     </div>
                 </div>
             </div>
