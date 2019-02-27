@@ -53,7 +53,7 @@
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="input-group py-2 mt-4">
-                            <input type="text" class="form-control" placeholder="<?php 
+                            <input type="text" class="form-control" id="busqueda" placeholder="<?php 
                         $currLang = get_bloginfo('language');
                         if($currLang == 'es-CR'){ // Replace condition with your language code.
                             echo 'Buscar Noticia';
@@ -61,9 +61,23 @@
                             echo 'Search New';
                         }?>"> 
                             <div class="input-group-append">
-                                <button class="btn btn-secondary" type="button">
-                                <i class="fa fa-search" id="fa-search"></i>
-                              </button>
+                                <?php 
+                                $currLang = get_bloginfo('language');
+                                if($currLang == "es-CR"){ // Replace condition with your language code.
+                                    ?>
+                                    <button class="btn btn-secondary" type="button" onclick="buscar()">
+                                        <i class="fa fa-search" id="fa-search"></i>
+                                    </button>
+                                    <?php 
+                                } else {
+                                    ?>
+                                    <button class="btn btn-secondary" type="button" onclick="search()">
+                                        <i class="fa fa-search" id="fa-search"></i>
+                                    </button>
+                                    <?php 
+                                }
+                                ?>
+                                
                             </div>
                         </div>
                     </div>
@@ -105,6 +119,17 @@
 
 
         <script type="text/javascript">
+            
+            function buscar()
+            {     
+                var text = document.getElementById("busqueda").value;
+                window.location.href = "http://localhost/DesarrolloRapido/wordpress/busqueda?text="+text;
+            }
+            function search()
+            {     
+                var text = document.getElementById("busqueda").value;
+                window.location.href = "http://localhost/DesarrolloRapido/wordpress/search?text="+text;
+            }
             var i = 0;
            // var lenguaje=window.language;
             $(document).ready(function(){
